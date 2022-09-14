@@ -12,10 +12,10 @@ const Modal = (props) => {
     return (
         <div className="Background-box">
             <div className="Box">
-                <p className="Modal-title">Thank you for your vote!</p>                
+                <p className="Modal-title">Thank you for your vote!</p>
                 {props.userSelection.map((e, i) => (
-                    <div>
-                        <p className="Modal-text" key={i}>{e.title} ({e.cat})</p>
+                    <div key={i}>
+                        <p className="Modal-text">{e.title} ({e.cat})</p>
                     </div>
                 ))}
                 <img src="https://i.redd.it/mfg6rhpn6t471.jpg" alt="Good enough!" className="Image"></img>

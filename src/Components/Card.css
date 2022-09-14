@@ -29,39 +29,22 @@
 
 
 /* HOVER : variation des styles */
-.Unselected:hover {
+.Unselected:hover, .Selected:hover {
     background-color: #34AC9C;
     transition: 0.2s;
 }
 
-.Selected:hover {
-    background-color: #34AC9C;
-    transition: 0.2s;
-}
-
-.Unselected:hover .Button {
+.Unselected:hover .Button, .Selected:hover .Selected-button {
     background-color: #34AC9C;
     transition: 0.2s;
     border: 1px solid #FFFFFF;
 }
 
-.Selected:hover .Selected-button {
-    background-color: #34AC9C;
-    transition: 0.2s;
-    border: 1px solid #FFFFFF;
-}
-
-.Button:hover {
+.Button:hover, .Selected-button:hover {
     color: #CCCCCC;
     transition: 0.2s ease;
-    /* border: 1px solid #FFFFFF; */
 }
 
-.Selected-button:hover {
-    color: #CCCCCC;
-    transition: 0.2s ease;
-    border: 1px solid #FFFFFF;
-}
 
 /* Style des éléments internes à la "Card" */
 .Image {

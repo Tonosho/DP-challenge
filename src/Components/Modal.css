@@ -1,0 +1,91 @@
+.Background-box {
+    position: fixed;
+    background: #00000050;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    max-height: fit-content;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 3vh;
+    overflow: auto;
+    box-shadow: 1px 1px 8px 1px black;
+}
+
+.Modal-title {
+    color: black;
+    margin-bottom: 3vh;
+}
+
+.Modal-text {
+    color: black;
+    font-size: 0.5em;
+}
+
+.Image {
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.Close-button {
+    color: black;
+    font-size: 0.475em;
+    font-weight: 500;
+    border: 1px solid black;
+    margin-top: 12px;
+    padding: 8px 30px 8px 30px;
+    border-radius: 18px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.Close-button:hover {
+    color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+    transition: 0.2s ease;
+}
+
+/* TAILLE D'ECRAN : ajustements */
+@media screen and (max-width: 1020px) {
+    .box {
+        width:60%;
+    }
+    .Modal-title {
+        font-size: 0.8em;
+    }
+    .Modal-text {
+        font-size: 0.6em;
+    }
+    .Close-button {
+        font-size: 0.6em;
+    }   
+}
+
+@media screen and (max-width: 500px) {
+    .box {
+        width:70%;
+    }
+    .Modal-title {
+        font-size: 1em;
+    }
+    .Modal-text {
+        font-size: 0.8em;
+    }
+    .Close-button {
+        font-size: 0.7em;
+    }   
+}

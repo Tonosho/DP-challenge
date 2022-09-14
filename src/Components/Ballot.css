@@ -1,0 +1,32 @@
+.Submit {
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    border-radius: 18px;
+    background-color: #009B86;
+    color: #FFFFFF;
+    font-size: 0.6em;
+    font-weight: bold;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    transition: 0.2s;
+}
+
+.Submit:hover {
+    background-color: #34AC9C;
+    transition: 0.2s ease;
+    color: #CCCCCC;
+    
+}
+
+/* TAILLE D'ECRAN : ajustements */
+@media screen and (max-width: 1020px) {
+    .Submit {
+        font-size: 0.6em;
+    }   
+}
+
+@media screen and (max-width: 500px) {
+    .Submit {
+        font-size: 0.8em;
+    }   
+}

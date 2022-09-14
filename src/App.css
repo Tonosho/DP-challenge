@@ -44,9 +44,6 @@
 
 /* TAILLE D'ECRAN : ajustements */
 @media screen and (max-width: 1080px) {
-  .Banner {
-    justify-content: center;
-  }
   .Movies-row {
     justify-content: center;
   }

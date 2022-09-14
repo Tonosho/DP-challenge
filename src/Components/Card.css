@@ -29,20 +29,14 @@
 
 
 /* HOVER : variation des styles */
-.Selected:hover {
-    background-color: #34AC9C;
-    transition: 0.2s;
-}
-
 .Unselected:hover {
     background-color: #34AC9C;
     transition: 0.2s;
 }
 
-.Selected:hover .Button{
+.Selected:hover {
     background-color: #34AC9C;
     transition: 0.2s;
-    border: 1px solid #FFFFFF;
 }
 
 .Unselected:hover .Button {
@@ -51,11 +45,23 @@
     border: 1px solid #FFFFFF;
 }
 
+.Selected:hover .Selected-button {
+    background-color: #34AC9C;
+    transition: 0.2s;
+    border: 1px solid #FFFFFF;
+}
+
 .Button:hover {
     color: #CCCCCC;
     transition: 0.2s ease;
+    /* border: 1px solid #FFFFFF; */
 }
 
+.Selected-button:hover {
+    color: #CCCCCC;
+    transition: 0.2s ease;
+    border: 1px solid #FFFFFF;
+}
 
 /* Style des éléments internes à la "Card" */
 .Image {
@@ -81,28 +87,36 @@
     cursor: pointer;
 }
 
-.Selected .Button {
+.Selected-button {
+    font-size: 0.475em;
+    font-weight: 500;
     background-color: #009B86;
+    border: 1px solid #009B86;
+    padding: 8px 30px 8px 30px;
+    border-radius: 18px;
+    transition: 0.2s ease;
+    cursor: pointer;
     transition: 0.2s;
     border: 1px solid #FFFFFF;
 }
-
 
 /* TAILLE D'ECRAN : ajustements */
 @media screen and (max-width: 1020px) {
     .Card-Title {
         font-size: 0.7em;
     }
+
     .Button {
         font-size: 0.6em;
-    }   
+    }
 }
 
 @media screen and (max-width: 500px) {
     .Card-Title {
         font-size: 0.9em;
     }
+
     .Button {
         font-size: 0.8em;
-    }   
+    }
 }

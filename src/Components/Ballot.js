@@ -3,7 +3,7 @@ import './Ballot.css';
 
 const Ballot = (props) => {
 
-  // Remontée du clic vers composant App
+  // Click sends data to App parent
   const submit = () => {
     props.clickToSubmitParent()
   }

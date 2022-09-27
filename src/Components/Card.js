@@ -3,7 +3,7 @@ import './Card.css';
 
 const Card = (props) => {
 
-  // Sélection / Déselection d'un film  
+  // Select / Unselect a movie 
   const handleClick = (movieName, movieCategory) => {
     props.clickToSelectParent(movieName, movieCategory);
   }

@@ -11,8 +11,6 @@ function App() {
   const [nominees, setNominees] = useState([]);
   const [myVote, setMyVote] = useState();
   const [modalDisplay, setModalDisplay] = useState(false);
-  console.log("log des choix", nominees);
-  console.log("log du submit", myVote);
 
   // Fetch Api ------------------------------------
   // useEffect(() => {
@@ -26,7 +24,7 @@ function App() {
   // ----------------------------------------------
 
 
-  // Liste des films format API
+  // Movie list Api format
   const apiList = [
     {
       id: "best-picture",
@@ -247,7 +245,7 @@ function App() {
     }
   ];
 
-  // Choix des films via le composant Card
+  // Selecting a movie through Card component
   const clickToSelect = (movieName, movieCategory) => {
 
     if (nominees.length === 0) {
@@ -264,18 +262,18 @@ function App() {
     }
   }
 
-  // Envoi du vote via le bouton Submit
+  // Sends user's vote through Submit button
   const clickToSubmit = () => {
     setMyVote(nominees);
     setModalDisplay(!modalDisplay);
   }
 
-  // Fermeture de la popup
+  // Close modal function
   const closeModal = () => {
     setModalDisplay(!modalDisplay)
   }
 
-  // Affichage des films
+  // Displays the movie list
   let moviesList = apiList.map((category, i) => (
 
     <div key={i} >

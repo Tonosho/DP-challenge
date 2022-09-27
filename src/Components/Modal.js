@@ -4,7 +4,7 @@ import './Modal.css';
 
 const Modal = (props) => {
 
-    // Fermeture au clic 
+    // Click to close
     const close = () => {
         props.closeModalParent()
     }

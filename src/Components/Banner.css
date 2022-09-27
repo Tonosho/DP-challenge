@@ -1,4 +1,4 @@
-.Banner {
+.banner {
     width: 100%;
     margin-top: 4vh;
     margin-bottom: 2vh;
@@ -11,15 +11,15 @@
 
 
 /* TAILLE D'ECRAN : ajustements */
-@media screen and (max-width: 1020px) {
-    .Banner {
+@media screen and (max-width: 1080px) {
+    .banner {
         font-size: 1.2em;
         text-align: center;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .Banner {
+    .banner {
         font-size: 1.5em;
         text-align: center;
     }

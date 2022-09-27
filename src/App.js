@@ -17,10 +17,9 @@ function App() {
   // Fetch Api ------------------------------------
   // useEffect(() => {
   //   async function loadData() {
-  //     const response = await fetch('api-link')
+  //     const response = await fetch('/api/getBallotData')
   //     const jsonResponse = await response.json()
-  //     setNominees([...jsonResponse])
-  //     console.log('test api', nominees)
+  //     setApiList([...jsonResponse])
   //   }
   //   loadData();
   // }, [])
@@ -277,21 +276,21 @@ function App() {
   }
 
   // Affichage des films
-  let moviesList = apiList.map((e, i) => (
+  let moviesList = apiList.map((category, i) => (
 
     <div key={i} >
 
-      <Banner name={e.title} />
+      <Banner name={category.title} />
 
-      <div className="Movies-row">
-        {e.items.map((f, j) => (
-          <div xs="12" sm="6" md="4" key={j}>
+      <div className="movies-row">
+        {category.items.map((movie, j) => (
+          <div key={j}>
             <Card
-              movieName={f.title}
-              movieUrl={f.photoUrL}
-              movieCategory={e.title}
+              movieName={movie.title}
+              movieUrl={movie.photoUrL}
+              movieCategory={category.title}
               clickToSelectParent={clickToSelect}
-              status={nominees.find(movie => movie.title === f.title) ? "Selected" : "Unselected"}
+              status={nominees.find(nominee => nominee.title === movie.title) ? "card-selected" : "card-unselected"}
             />
           </div>
         ))}
@@ -302,9 +301,9 @@ function App() {
   )
 
   return (
-    <div className="App">
+    <div className="app">
 
-      <div className="Content">
+      <div className="app-content">
 
         <h1>AWARD 2021</h1>
 

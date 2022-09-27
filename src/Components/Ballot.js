@@ -9,7 +9,7 @@ const Ballot = (props) => {
   }
 
   return (
-    <div className="Submit" onClick={submit}>Submit!</div>
+    <div className="submit-button" onClick={submit}>Submit!</div>
   )
 }
 

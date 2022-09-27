@@ -10,16 +10,16 @@ const Modal = (props) => {
     }
 
     return (
-        <div className="Background-box">
-            <div className="Box">
-                <p className="Modal-title">Thank you for your vote!</p>
+        <div className="modal-background-box">
+            <div className="modal-box">
+                <p className="modal-title">Thank you for your vote!</p>
                 {props.userSelection.map((e, i) => (
                     <div key={i}>
-                        <p className="Modal-text">{e.title} ({e.cat})</p>
+                        <p className="modal-text">{e.title} ({e.cat})</p>
                     </div>
                 ))}
-                <img src="https://i.redd.it/mfg6rhpn6t471.jpg" alt="Good enough!" className="Image"></img>
-                <div className="Close-button" onClick={close}>Close</div>
+                <img src="https://i.redd.it/mfg6rhpn6t471.jpg" alt="Good enough!" className="modal-image"></img>
+                <div className="modal-close-button" onClick={close}>Close</div>
             </div>
         </div>
     )

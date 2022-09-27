@@ -1,10 +1,10 @@
 /* Styles des "Cards" selon leur status */
-.Unselected {
+.card-unselected {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 350px;
+    height: 360px;
     width: 240px;
     padding: 1vh;
     background-color: #0D2436;
@@ -13,12 +13,12 @@
     transition: 0.2s;
 }
 
-.Selected {
+.card-selected {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 350px;
+    height: 360px;
     width: 240px;
     padding: 1vh;
     background-color: #009B86;
@@ -29,38 +29,38 @@
 
 
 /* HOVER : variation des styles */
-.Unselected:hover, .Selected:hover {
+.card-unselected:hover, .card-selected:hover {
     background-color: #34AC9C;
     transition: 0.2s;
 }
 
-.Unselected:hover .Button, .Selected:hover .Selected-button {
+.card-unselected:hover .card-button, .card-selected:hover .card-selected-button {
     background-color: #34AC9C;
     transition: 0.2s;
     border: 1px solid #FFFFFF;
 }
 
-.Button:hover, .Selected-button:hover {
+.card-button:hover, .card-selected-button:hover {
     color: #CCCCCC;
     transition: 0.2s ease;
 }
 
 
 /* Style des éléments internes à la "Card" */
-.Image {
-    height: auto;
+.card-image {
+    height: 180px;
     object-fit: cover;
     margin: 0;
     box-shadow: 3px 3px 8px -2px black;
 }
 
-.Card-Title {
-    font-size: 0.575em;
+.card-title {
+    font-size: 0.550em;
     font-weight: 700;
     margin: 0;
 }
 
-.Button {
+.card-button {
     font-size: 0.475em;
     font-weight: 500;
     background-color: #009B86;
@@ -71,7 +71,7 @@
     cursor: pointer;
 }
 
-.Selected-button {
+.card-selected-button {
     font-size: 0.475em;
     font-weight: 500;
     background-color: #009B86;
@@ -86,21 +86,21 @@
 
 /* TAILLE D'ECRAN : ajustements */
 @media screen and (max-width: 1020px) {
-    .Card-Title {
+    .card-title {
         font-size: 0.7em;
     }
 
-    .Button {
+    .card-button {
         font-size: 0.6em;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .Card-Title {
+    .card-title {
         font-size: 0.9em;
     }
 
-    .Button {
+    .card-button {
         font-size: 0.8em;
     }
 }

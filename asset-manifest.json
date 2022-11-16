@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DP-challenge/static/css/main.646fcce1.chunk.css",
+    "main.css": "/DP-challenge/static/css/main.74f69fef.chunk.css",
     "main.js": "/DP-challenge/static/js/main.6bd0c747.chunk.js",
     "main.js.map": "/DP-challenge/static/js/main.6bd0c747.chunk.js.map",
     "runtime-main.js": "/DP-challenge/static/js/runtime-main.b6557ebc.js",
@@ -12,14 +12,14 @@
     "static/js/3.c76453f1.chunk.js.map": "/DP-challenge/static/js/3.c76453f1.chunk.js.map",
     "index.html": "/DP-challenge/index.html",
     "static/css/2.d6333cf9.chunk.css.map": "/DP-challenge/static/css/2.d6333cf9.chunk.css.map",
-    "static/css/main.646fcce1.chunk.css.map": "/DP-challenge/static/css/main.646fcce1.chunk.css.map",
+    "static/css/main.74f69fef.chunk.css.map": "/DP-challenge/static/css/main.74f69fef.chunk.css.map",
     "static/js/2.3616fd32.chunk.js.LICENSE.txt": "/DP-challenge/static/js/2.3616fd32.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b6557ebc.js",
     "static/css/2.d6333cf9.chunk.css",
     "static/js/2.3616fd32.chunk.js",
-    "static/css/main.646fcce1.chunk.css",
+    "static/css/main.74f69fef.chunk.css",
     "static/js/main.6bd0c747.chunk.js"
   ]
 }

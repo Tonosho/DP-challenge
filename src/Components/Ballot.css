@@ -19,7 +19,7 @@
     
 }
 
-/* TAILLE D'ECRAN : ajustements */
+/* SREEN SIZES ADJUSTEMENTS */
 @media screen and (max-width: 1020px) {
     .submit-button {
         font-size: 0.6em;

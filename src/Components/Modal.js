@@ -18,7 +18,6 @@ const Modal = (props) => {
                         <p className="modal-text">{e.title} ({e.cat})</p>
                     </div>
                 ))}
-                <img src="https://i.redd.it/mfg6rhpn6t471.jpg" alt="Good enough!" className="modal-image"></img>
                 <div className="modal-close-button" onClick={close}>Close</div>
             </div>
         </div>

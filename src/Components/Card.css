@@ -1,4 +1,4 @@
-/* Styles des "Cards" selon leur status */
+/* Card styles depending on status */
 .card-unselected {
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
 }
 
 
-/* HOVER : variation des styles */
+/* HOVER */
 .card-unselected:hover, .card-selected:hover {
     background-color: #34AC9C;
     transition: 0.2s;
@@ -46,7 +46,7 @@
 }
 
 
-/* Style des éléments internes à la "Card" */
+/* Cards elements */
 .card-image {
     height: 180px;
     object-fit: cover;
@@ -84,13 +84,17 @@
     border: 1px solid #FFFFFF;
 }
 
-/* TAILLE D'ECRAN : ajustements */
+/* SREEN SIZES ADJUSTEMENTS */
 @media screen and (max-width: 1020px) {
     .card-title {
         font-size: 0.7em;
     }
 
     .card-button {
+        font-size: 0.6em;
+    }
+
+    .card-selected-button {
         font-size: 0.6em;
     }
 }
@@ -102,5 +106,9 @@
 
     .card-button {
         font-size: 0.8em;
+    }
+
+    .card-selected-button {
+        font-size: 0.6em;
     }
 }

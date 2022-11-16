@@ -33,7 +33,7 @@
 }
 
 
-/* TAILLE D'ECRAN : ajustements */
+/* SREEN SIZES ADJUSTEMENTS */
 @media screen and (max-width: 1080px) {
   .movies-row {
     justify-content: center;

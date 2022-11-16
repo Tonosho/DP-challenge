@@ -10,7 +10,7 @@
 }
 
 
-/* TAILLE D'ECRAN : ajustements */
+/* SREEN SIZES ADJUSTEMENTS */
 @media screen and (max-width: 1080px) {
     .banner {
         font-size: 1.2em;

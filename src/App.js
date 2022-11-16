@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Ballot from './Components/Ballot';
 import Banner from './Components/Banner';
 import Card from './Components/Card';
@@ -8,6 +8,8 @@ import Modal from './Components/Modal';
 
 function App() {
 
+  // const [apiList, setApiList] = useState([]);
+  // console.log(apiList)
   const [nominees, setNominees] = useState([]);
   const [myVote, setMyVote] = useState();
   const [modalDisplay, setModalDisplay] = useState(false);
@@ -15,8 +17,9 @@ function App() {
   // Fetch Api ------------------------------------
   // useEffect(() => {
   //   async function loadData() {
-  //     const response = await fetch('/api/getBallotData')
+  //     const response = await fetch('http://192.168.0.163:8080/api/getBallotData')
   //     const jsonResponse = await response.json()
+  //     console.log('data :', jsonResponse)
   //     setApiList([...jsonResponse])
   //   }
   //   loadData();

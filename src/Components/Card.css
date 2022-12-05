@@ -63,6 +63,7 @@
 .card-button {
     font-size: 0.475em;
     font-weight: 500;
+    color: #FFFFFF;
     background-color: #009B86;
     border: 1px solid #009B86;
     padding: 8px 30px 8px 30px;
@@ -74,6 +75,7 @@
 .card-selected-button {
     font-size: 0.475em;
     font-weight: 500;
+    color: #FFFFFF;
     background-color: #009B86;
     border: 1px solid #009B86;
     padding: 8px 30px 8px 30px;

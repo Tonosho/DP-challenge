@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Ballot from './Components/Ballot';
 import Banner from './Components/Banner';
 import Card from './Components/Card';
@@ -9,7 +9,6 @@ import Modal from './Components/Modal';
 function App() {
 
   // const [apiList, setApiList] = useState([]);
-  // console.log(apiList)
   const [nominees, setNominees] = useState([]);
   const [myVote, setMyVote] = useState();
   const [modalDisplay, setModalDisplay] = useState(false);
@@ -276,30 +275,6 @@ function App() {
     setModalDisplay(!modalDisplay)
   }
 
-  // Displays the movie list
-  let moviesList = apiList.map((category, i) => (
-
-    <div key={i} >
-
-      <Banner name={category.title} />
-
-      <div className="movies-row">
-        {category.items.map((movie, j) => (
-          <div key={j}>
-            <Card
-              movieName={movie.title}
-              movieUrl={movie.photoUrL}
-              movieCategory={category.title}
-              clickToSelectParent={clickToSelect}
-              status={nominees.find(nominee => nominee.title === movie.title) ? "card-selected" : "card-unselected"}
-            />
-          </div>
-        ))}
-      </div>
-
-    </div>
-  )
-  )
 
   return (
     <div className="app">
@@ -308,7 +283,24 @@ function App() {
 
         <h1>AWARD 2021</h1>
 
-        {moviesList}
+        {apiList.map((category, i) => (
+
+          <div key={i} >
+            <Banner name={category.title} />
+            <div className="movies-row">
+              {category.items.map((movie, j) => (
+                <div key={j}>
+                  <Card
+                    movieName={movie.title}
+                    movieUrl={movie.photoUrL}
+                    movieCategory={category.title}
+                    clickToSelectParent={clickToSelect}
+                    status={nominees.find(nominee => nominee.title === movie.title) ? "card-selected" : "card-unselected"}
+                  />
+                </div>
+              ))}
+            </div>
+          </div> ))}
 
         <Ballot clickToSubmitParent={clickToSubmit} />
 

@@ -13,12 +13,12 @@ const Modal = (props) => {
         <div className="modal-background-box">
             <div className="modal-box">
                 <p className="modal-title">Thank you for your vote!</p>
-                {props.userSelection.map((e, i) => (
+                {props.userSelection.map((movie, i) => (
                     <div key={i}>
-                        <p className="modal-text">{e.title} ({e.cat})</p>
+                        <p className="modal-text">{movie.title} ({movie.cat})</p>
                     </div>
                 ))}
-                <div className="modal-close-button" onClick={close}>Close</div>
+                <button className="modal-close-button" onClick={close}>Close</button>
             </div>
         </div>
     )

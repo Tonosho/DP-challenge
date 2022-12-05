@@ -12,12 +12,11 @@ const Card = (props) => {
     <div className={props.status}>
       <p className="card-title">{props.movieName}</p>
       <img src={props.movieUrl} alt={props.movieName} className="card-image"></img>
-      {/* Button  */}
-      <div
+      <button
         className={props.status === "card-selected" ? "card-selected-button" : "card-button"}
         onClick={() => handleClick(props.movieName, props.movieCategory)}>
         {props.status === "card-selected" ? "Selected!" : "Choose"}
-      </div>
+      </button>
     </div>
   )
 }

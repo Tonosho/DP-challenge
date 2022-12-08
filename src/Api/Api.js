@@ -1,10 +1,8 @@
-const api = {
+ const Api = {
   getBallotData() {
     return fetch('/api/getBallotData').then(res => {
       return res.json();
     });
   }
-  
 };
-console.log(res.json());
-export default api;
+export default Api;

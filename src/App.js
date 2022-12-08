@@ -1,30 +1,11 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Ballot from './Components/Ballot';
 import Banner from './Components/Banner';
 import Card from './Components/Card';
 import Modal from './Components/Modal';
-
-function App() {
-
-  // const [apiList, setApiList] = useState([]);
-  const [nominees, setNominees] = useState([]);
-  const [myVote, setMyVote] = useState();
-  const [modalDisplay, setModalDisplay] = useState(false);
-
-  // Fetch Api ------------------------------------
-  // useEffect(() => {
-  //   async function loadData() {
-  //     const response = await fetch('http://192.168.0.163:8080/api/getBallotData')
-  //     const jsonResponse = await response.json()
-  //     console.log('data :', jsonResponse)
-  //     setApiList([...jsonResponse])
-  //   }
-  //   loadData();
-  // }, [])
-  // ----------------------------------------------
-
+import Api from './Api/Api'
 
   // Movie list Api format
   const apiList = [
@@ -247,9 +228,23 @@ function App() {
     }
   ];
 
+function App() {
+
+  // const [apiList, setApiList] = useState([]);
+  const [nominees, setNominees] = useState([]);
+  const [myVote, setMyVote] = useState();
+  const [modalDisplay, setModalDisplay] = useState(false);
+  // const [movies, setMovies] = useState()
+
+  // useEffect(() => {
+  //   const movies = Api.getBallotData()
+  //   if (movies) {
+  //     setApiList(movies)
+  //   }
+  // }, [])
+
   // Selecting a movie through Card component
   const clickToSelect = (movieName, movieCategory) => {
-
     if (nominees.length === 0) {
       setNominees([{ title: movieName, cat: movieCategory }])
     }

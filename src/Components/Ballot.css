@@ -1,14 +1,11 @@
-
-
 .submit-button {
     text-align: center;
     padding: 10px 40px 10px 40px;
-    border-radius: 18px;
-    background-color: #009B86;
+    background-color: #ffa726;
     color: #FFFFFF;
     font-size: 0.6em;
     font-weight: bold;
-    margin-top: 8vh;
+    margin-top: 4.5vh;
     margin-bottom: 5vh;
     transition: 0.2s;
     cursor: pointer;
@@ -16,21 +13,21 @@
 }
 
 .submit-button:hover {
-    background-color: #34AC9C;
+    background-color: #ffcc80;
     transition: 0.2s ease;
-    color: #CCCCCC;
-    
 }
 
 /* SREEN SIZES ADJUSTEMENTS */
 @media screen and (max-width: 1020px) {
     .submit-button {
         font-size: 0.6em;
+        margin-top: 3vh;
     }   
 }
 
 @media screen and (max-width: 500px) {
     .submit-button {
-        font-size: 0.8em;
+        font-size: 0.9em;
+        margin-top: 3vh;
     }   
 }

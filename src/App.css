@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
 .app {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   min-height: 100vh;
-  color: #FFFFFF;
-  background-color: #0D2436;
+  color: #ffffff;
+  background-color: #1f1f24;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,8 +19,12 @@
   align-items: center;
   justify-content: center;
   width: 80vw;
-  margin-top: 5vh;
+  margin-top: 10vh;
   margin-bottom: 5vh;
+}
+
+.app h1 {
+  font-weight: 700;
 }
 
 .movies-row {
@@ -31,7 +35,6 @@
   flex-wrap: wrap;
   width: 100%;
 }
-
 
 /* SREEN SIZES ADJUSTEMENTS */
 @media screen and (max-width: 1080px) {

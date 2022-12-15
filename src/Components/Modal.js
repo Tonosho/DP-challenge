@@ -15,7 +15,7 @@ const Modal = (props) => {
                 <p className="modal-title">Thank you for your vote!</p>
                 {props.userSelection.map((movie, i) => (
                     <div key={i}>
-                        <p className="modal-text">{movie.title} ({movie.cat})</p>
+                        <p className="modal-text">{movie.title} ({movie.category})</p>
                     </div>
                 ))}
                 <button className="modal-close-button" onClick={close}>Close</button>

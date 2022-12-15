@@ -9,23 +9,10 @@ const Card = (props) => {
 
   return (
     <div>
-      <div
-        className={
-          props.isSelected
-            ? "card-selected"
-            : props.isExcluded
-            ? "card-excluded"
-            : "card-unselected"
-        }
-      >
+      <div className={props.isSelected ? "card-selected" : props.isExcluded ? "card-excluded" : "card-unselected"}>
         <div
           onClick={() => handleClick(props.movieName, props.movieCategory)}
-          className={
-            props.isSelected
-              ? "card-image-container-selected"
-              : "card-image-container"
-          }
-        >
+          className={props.isSelected ? "card-image-container-selected" : "card-image-container"}>
           <img
             src={props.movieUrl}
             alt={props.movieName}

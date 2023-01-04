@@ -286,11 +286,11 @@ function App() {
 
   // Check if a movie from a specific category is selected in nominees
   const isSelected = (movieName, movieCategory) =>
-    nominees.find(nominee => nominee.title === movieName && nominee.category === movieCategory) ? true : false;
+    nominees.find(nominee => nominee.title === movieName && nominee.category === movieCategory);
 
   // Check if a movie is excluded in it's category  
   const isExcluded = (movieName, movieCategory) =>
-    nominees.find(nominee => nominee.title !== movieName && nominee.category === movieCategory) ? true : false;
+    nominees.find(nominee => nominee.title !== movieName && nominee.category === movieCategory);
 
   // Sends user's vote through Submit button
   const clickToSubmit = () => {
